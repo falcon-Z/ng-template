@@ -9,18 +9,22 @@ import { environment } from '../environments/environment';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { SidenavComponent } from './components/navigation/sidenav/sidenav.component';
 import { SharedModule } from './shared/shared.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    FlexLayoutModule,
     SharedModule
   ],
   providers: [],

@@ -1,0 +1,19 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+sm-navbar {
+    position: sticky;
+    /* For macOS/iOS Safari */
+    position: -webkit-sticky;
+    /* Sets the sticky toolbar to be on top */
+    top: 0;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+    z-index: 1000;
+}
